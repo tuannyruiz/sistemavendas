@@ -1,5 +1,3 @@
-using System;
-
 namespace SistemaVendas.classes {
     public class Produto {
         private int id;
