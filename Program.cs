@@ -14,7 +14,24 @@ namespace SistemaVendas
             opcao = Console.ReadLine();
 
             while(opcao != "9") {
-                
+                switch(opcao) {
+                    case "1":
+                        Console.WriteLine("Cadastro do Cliente");
+                        Console.WriteLine("-------------------------");
+                        break;
+                    case "2":
+                        Console.WriteLine("Cadastro de Produtos");
+                        Console.WriteLine("-------------------------");  
+                        break;                      
+                    case "3":
+                        Console.WriteLine("Cadastro de Venda");
+                        Console.WriteLine("-------------------------");  
+                        break;                      
+                    case "4":
+                        Console.WriteLine("Extrato Cliente");
+                        Console.WriteLine("-------------------------");  
+                        break;                      
+                }                
             }
         }
     }
