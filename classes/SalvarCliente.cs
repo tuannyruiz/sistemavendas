@@ -7,8 +7,8 @@ namespace SistemaVendas.classes {
             string msg = "";
             StreamWriter arquivo = null;
             try{
+                arquivo = new StreamWriter("cadclientes.csv", true);
                 if(cpfValido(cliente.Cpf)){
-                    arquivo = new StreamWriter("cadclientes.csv", true);
                     arquivo.WriteLine(cliente.Nome + ";" + cliente.Email + ";" + cliente.Cpf + ";" + cliente.DataCadastro);
                     msg = "Cliente cadastrado com sucesso!";                    
                 } else {
